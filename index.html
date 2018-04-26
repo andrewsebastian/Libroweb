@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+       
+    <script type="text/javascript" src="validacion.js">
+        function validacion(){
+            var isbn=document.getElementById("isbn");
+            var miformulario=document.getElementById("miformulario");
+            
+        if (isbn.value==""){
+        alert("datos no validos);
+              }
+              return false;
+        else {
+        miformulario.submit();
+        }
+        }
+    </script>
+    <link href="style.css" type="text/css" rel="stylesheet" >
+<title>Formulario Libro</title>
+</head>
+<body>
+    <!--<h1>Formulario altas libros</h1>-->    
+<form>
+    <fieldset>
+    <legend>Formulario alta  libros</legend>
+        
+  
+        <p><label for="isbn">
+            <strong>ISBN:</strong></label>
+            <input id="isbn" type="text" name="isbn"><br>
+        </p>
+        
+            <p><label for="titulo">Titulo:</label>
+                <input id="titulo" type="text" name="titulo"><br>
+            </p>
+                <p><label for="categoria">categoria:</label>
+                    <input id="categoria" type="text" name="categoria"><br>
+                    </p>
+        
+        <!--input type="button" value="Insertar"><br>-->
+        <p><input type="submit" value="Insertar">
+    </p>
+    
+    
+    
+</fieldset>
+</form>
+</body>     
+</html>
