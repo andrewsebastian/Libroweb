@@ -4,19 +4,9 @@
 <meta charset="utf-8">
        
     <script type="text/javascript" src="validacion.js">
-        function validacion(){
-            var isbn=document.getElementById("isbn");
-            var miformulario=document.getElementById("miformulario");
-            
-        if (isbn.value==""){
-        alert("datos no validos);
-              }
-              return false;
-        else {
-        miformulario.submit();
-        }
-        }
+        alert("un mensaje de prueba 1");            
     </script>
+    
     <link href="style.css" type="text/css" rel="stylesheet" >
 <title>Formulario Libro</title>
 </head>
@@ -29,22 +19,18 @@
   
         <p><label for="isbn">
             <strong>ISBN:</strong></label>
-            <input id="isbn" type="text" name="isbn"><br>
+            <input id="isbn" type="text" name="isbn" required=""><br>
         </p>
         
             <p><label for="titulo">Titulo:</label>
-                <input id="titulo" type="text" name="titulo"><br>
+                <input id="titulo" type="text" name="titulo" required=""><br>
             </p>
                 <p><label for="categoria">categoria:</label>
-                    <input id="categoria" type="text" name="categoria"><br>
+                    <input id="categoria" type="text" name="categoria" required=""><br>
                     </p>
         
-        <!--input type="button" value="Insertar"><br>-->
-        <p><input type="submit" value="Insertar">
-    </p>
-    
-    
-    
+        <input type="button" value="Guardar" onclick="alert('los datos se guardaron exitosamente')";>  <input type="submit" value="Insertar">
+        
 </fieldset>
 </form>
 </body>     
