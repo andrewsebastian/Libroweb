@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="iso-8859-1">
+    <title>Calculadora</title>
+    <script type="text/javascript" src="calculadora.js"></script>
+</head>
+    <body>
+        <form>
+            <label for="t1">numero 1</label>
+            <br><br>
+            <input type="text" id="cajaTexto1">
+            <br><br>
+            <label for="t1">numero 2</label>
+            <br><br>
+            <input type="text" id="cajaTexto2">
+            <br><br>
+            <input type="button" value="+" style="color: brown" onclick="return suma()">
+            <input type="button" value="-" style="color: brown" onclick="return resta()">
+            <input type="button" value="*" style="color: brown" onclick="return multiplicacion()">
+            <input type="button" value="/" style="color: brown" onclick="return division()">
+            <br><br>
+            <label for="t1">resultado</label>
+            <br><br>
+            <input type="float" id="cajaTexto3" disabled="false">
+        </form>
+    </body>
+</html>
